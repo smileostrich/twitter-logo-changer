@@ -41,7 +41,7 @@ function replaceCompanyName() {
     const texts = document.querySelectorAll('span');
     texts.forEach(v => {
         if (v.innerText) {
-            v.innerText = v.innerText.replace('X Corp.', 'plz remain Twitter');
+            v.innerText = v.innerText.replace('X Corp.', 'plz stay on Twitter');
         }
     });
 }
