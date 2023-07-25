@@ -47,3 +47,17 @@ function replaceCompanyName() {
 }
 
 replaceCompanyName();
+
+function changeFavicon(link) {
+    let favicon = document.querySelector('link[rel="shortcut icon"]');
+    if (favicon) {
+        favicon.href = link;
+    } else {
+        favicon = document.createElement('link');
+        favicon.rel = 'shortcut icon';
+        favicon.href = link;
+        document.head.appendChild(favicon);
+    }
+}
+
+changeFavicon('//abs.twimg.com/favicons/twitter.2.ico');
