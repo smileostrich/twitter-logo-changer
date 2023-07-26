@@ -1,7 +1,7 @@
 # Twitter Logo Changer
 
 ### Description
-트위터 로고 변환기 (Chrome 확장 프로그램 - 심사중이기에 아래 Usage 참고)
+트위터 로고 변환기
 
 ### Before
 <img width="111" alt="스크린샷 2023-07-25 오후 9 24 01" src="https://github.com/smileostrich/twitter-logo-changer/assets/68785480/28a1cc18-cce5-4a6d-8f33-3685bdb448b5">
@@ -26,7 +26,8 @@
 2. 위 화면에서 "압축해제된 확장 프로그램을 로드합니다."를 클릭
 3. 다운받은 현재 repository 코드 등록
 
-### Update Log
+
+## Update Log
 #### v1.0 - 2023.07.24
 Logo, company name 변경 기능 추가
 #### v1.1 - 2023.07.25
