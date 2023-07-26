@@ -1,8 +1,15 @@
 function changeLogo() {
-    const svgs = document.querySelectorAll(`svg:has(path[d="M14.258 10.152L23.176 0h-2.113l-7.747 8.813L7.133 0H0l9.352 13.328L0 23.973h2.113l8.176-9.309 6.531 9.309h7.133zm-2.895 3.293l-.949-1.328L2.875 1.56h3.246l6.086 8.523.945 1.328 7.91 11.078h-3.246zm0 0"])`);
+    const oldSVGPath = 'M14.258 10.152L23.176 0h-2.113l-7.747 8.813L7.133 0H0l9.352 13.328L0 23.973h2.113l8.176-9.309 6.531 9.309h7.133zm-2.895 3.293l-.949-1.328L2.875 1.56h3.246l6.086 8.523.945 1.328 7.91 11.078h-3.246zm0 0';
+    const newSVGPath = 'M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z';
 
-    if (svgs.length >= 1) {
-        svgs.forEach(svg => {
+    const svgs = document.querySelectorAll('svg');
+    const matchedSVGs = Array.from(svgs).filter(svg => {
+        const path = svg.querySelector('path');
+        return path && [oldSVGPath, newSVGPath].includes(path.getAttribute('d'));
+    });
+
+    if (matchedSVGs.length >= 1) {
+        matchedSVGs.forEach(svg => {
             const path = svg.querySelector('path');
             if (path) {
                 updateLogo(path, svg);
