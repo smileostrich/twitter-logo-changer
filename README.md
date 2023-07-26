@@ -12,7 +12,14 @@
 <img width="177" alt="스크린샷 2023-07-24 오후 10 44 25" src="https://github.com/smileostrich/twitter-logo-changer/assets/68785480/240444fd-7e14-4c33-b4bf-a0531427a243">
 
 
-### Usage
+## Usage
+### Use Chrome extension
+#### latest version
+1.2
+#### link
+[chrome app link](https://chrome.google.com/webstore/detail/twitter-logo-changer/leffemmmchgmbkcpgaelaffciilelmcc?hl=ko&authuser=0)
+
+ ### Personal extension way
 <img width="748" alt="스크린샷 2023-07-25 오전 12 46 19" src="https://github.com/smileostrich/twitter-logo-changer/assets/68785480/5855a21d-d03f-454a-94fc-d73c22da127e">
 
 1. chrome://extensions/ 에 접속한다.
@@ -20,7 +27,9 @@
 3. 다운받은 현재 repository 코드 등록
 
 ### Update Log
-#### 2023.07.24
+#### v1.0 - 2023.07.24
 Logo, company name 변경 기능 추가
-#### 2023.07.25
+#### v1.1 - 2023.07.25
 favicon 변경 기능 추가
+#### v1.2 - 2023.07.26
+Logo 변경사항 반영
