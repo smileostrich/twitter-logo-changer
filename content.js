@@ -77,7 +77,7 @@ function changeTwitButtonText() {
     const twitButtonNestedSpan = document.querySelector('[data-testid="SideNav_NewTweet_Button"] .css-901oao.css-16my406.r-poiln3.r-bcqeeo.r-qvutc0 span.css-901oao.css-16my406.r-poiln3.r-bcqeeo.r-qvutc0');
 
     // If the span exists and its innerText isn't 'Twit', change it
-    if (twitButtonNestedSpan && twitButtonNestedSpan.innerText !== 'Twits') {
+    if (twitButtonNestedSpan && twitButtonNestedSpan.innerText !== 'Twit') {
         twitButtonNestedSpan.innerText = 'Twit';
     }
 }
