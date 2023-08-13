@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Twitter Logo Changer",
-  "version": "1.2",
+  "version": "1.3",
   "description": "Replace Twitter logo to the classic",
   "action": {
     "default_icon": {
