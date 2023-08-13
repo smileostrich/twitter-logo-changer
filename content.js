@@ -39,17 +39,6 @@ const observer = new MutationObserver(mutations => {
 });
 observer.observe(document.body, { childList: true, subtree: true });
 
-function replaceCompanyName() {
-    const texts = document.querySelectorAll('span');
-    texts.forEach(v => {
-        if (v.innerText) {
-            v.innerText = v.innerText.replace('X Corp.', 'plz stay on Twitter');
-        }
-    });
-}
-
-replaceCompanyName();
-
 function changeFavicon(link) {
     let favicon = document.querySelector('link[rel="shortcut icon"]');
     if (favicon) {
@@ -82,3 +71,27 @@ changeTitle();
 
 const headObserver = new MutationObserver(changeTitle);
 headObserver.observe(document.head, { subtree: true, characterData: true, childList: true });
+
+function changeTwitButtonText() {
+    // Query for the button by its data-testid which seems to be unique for that button
+    const twitButtonNestedSpan = document.querySelector('[data-testid="SideNav_NewTweet_Button"] .css-901oao.css-16my406.r-poiln3.r-bcqeeo.r-qvutc0 span.css-901oao.css-16my406.r-poiln3.r-bcqeeo.r-qvutc0');
+
+    // If the span exists and its innerText isn't 'Twit', change it
+    if (twitButtonNestedSpan && twitButtonNestedSpan.innerText !== 'Twits') {
+        twitButtonNestedSpan.innerText = 'Twit';
+    }
+}
+
+changeTwitButtonText();
+
+const buttonObserver = new MutationObserver(mutations => {
+    for (const mutation of mutations) {
+        if (mutation.type === 'childList') {
+            if (changeLogo() || changeTwitButtonText()) {
+                buttonObserver.disconnect();
+                break;
+            }
+        }
+    }
+});
+buttonObserver.observe(document.body, { childList: true, subtree: true });
