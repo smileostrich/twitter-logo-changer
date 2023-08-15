@@ -15,7 +15,7 @@
 ## Usage
 ### Use Chrome extension
 #### latest version
-1.3
+1.4
 #### link
 [chrome app link](https://chrome.google.com/webstore/detail/twitter-logo-changer/leffemmmchgmbkcpgaelaffciilelmcc?hl=ko&authuser=0)
 
@@ -34,5 +34,7 @@ Logo, company name 변경 기능 추가
 favicon 변경 기능 추가
 #### v1.2 - 2023.07.26
 Logo 변경사항 반영
-#### v1.3 - 2023.07.26
-refresh 하지 않아도 변경사항 반영되도록 수정, title 변경 기능 추가, Post -> Tweet 변경 
+#### v1.3 - 2023.08.13
+refresh 하지 않아도 변경사항 반영되도록 수정, title 변경 기능 추가
+#### v1.4 - 2023.08.15
+Post -> Tweet 변경
