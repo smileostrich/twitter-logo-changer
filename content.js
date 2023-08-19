@@ -73,12 +73,10 @@ const headObserver = new MutationObserver(changeTitle);
 headObserver.observe(document.head, { subtree: true, characterData: true, childList: true });
 
 function changeTwitButtonText() {
-    // Query for the button by its data-testid which seems to be unique for that button
     const twitButtonNestedSpan = document.querySelector('[data-testid="SideNav_NewTweet_Button"] .css-901oao.css-16my406.r-poiln3.r-bcqeeo.r-qvutc0 span.css-901oao.css-16my406.r-poiln3.r-bcqeeo.r-qvutc0');
 
-    // If the span exists and its innerText isn't 'Twit', change it
-    if (twitButtonNestedSpan && twitButtonNestedSpan.innerText !== 'Twit') {
-        twitButtonNestedSpan.innerText = 'Twit';
+    if (twitButtonNestedSpan && twitButtonNestedSpan.innerText !== 'Tweet') {
+        twitButtonNestedSpan.innerText = 'Tweet';
     }
 }
 
